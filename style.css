@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  background: lightblue;
+  padding: 10px;
+}
+
+.nav li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Skills Section */
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills li {
+  background: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+.projects ol {
+  padding-left: 20px;
+}
+
+/* Education Table */
+.education table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.education th, .education td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.education th {
+  background: lightblue;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education table, .education th, .education td {
+    font-size: 14px;
+  }
+}
